@@ -2,7 +2,7 @@ var array = [1,2,3,4,5]
 
 var result = array.reduce((accumulator,item) => accumulator+item);
 
-console.log(result) 
+console.log(result)  // 15  (1+2+3+4+5) 
 
 
 

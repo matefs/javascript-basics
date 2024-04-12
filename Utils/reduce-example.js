@@ -1,8 +1,8 @@
 var array = [1,2,3,4,5]
 
-var result = array.reduce((accumulator,item) => accumulator+item);
+var result = array.reduce((accumulator,item) => accumulator+item , 0 );
 
-console.log(result)  // 15  (1+2+3+4+5) 
+console.log(`sum total from array ${array} -> ${result}`)  // 15  (1+2+3+4+5) 
 
 
 

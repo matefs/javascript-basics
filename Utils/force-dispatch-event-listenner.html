@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teste de Disparo de Evento 'change'</title>
+</head>
+<body>
+
+<input type="file" id="meuUpload">
+
+<script>
+// Identifique o elemento alvo
+const meuUpload = document.getElementById('meuUpload');
+ 
+
+// Adicione um ouvinte de evento 'change'
+meuUpload.addEventListener('change', function(event) {
+	console.log('evento disparado')
+  const arquivo = event.target.files[0];
+  console.log('Arquivo selecionado:', arquivo.name);
+});
+
+setTimeout(() => {
+meuUpload.dispatchEvent(new Event('change'));
+
+},5000)
+// Dispare o evento 'change' no elemento alvo
+</script>
+
+</body>
+</html>

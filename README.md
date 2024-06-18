@@ -1,6 +1,6 @@
 ### Repository structure: 
 
-```
+```bash
 utils
 ├── math-functions
 │   ├── add.js
@@ -17,7 +17,7 @@ utils
 
 ### Optional chainning: 
 
-```
+```js
 undefined.length // TypeError: Cannot read properties of undefined
 undefined?.length // undefined 
 ```

@@ -15,6 +15,16 @@ utils
 
 ```
 
+### Folder content: 
+```
+Utils/arrray-functions/find-index-by-number.js          Utils/sorting-numbers-example.js                        
+Utils/arrray-functions/find-index-by-string.js          labeled-statement-for-loop.js                           
+Utils/force-dispatch-event-listenner.html               right-way-to-declare-variables.js                       
+Utils/force-waiting-async-function.js                   variables-operations/const-let-var-example.js           
+Utils/object-assign.js                                  variables-operations/nullish-variable-validation.js     
+Utils/objects-functions/delete-atribute-from-object.js  
+```
+
 ### Optional chainning: 
 
 ```js

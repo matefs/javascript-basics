@@ -31,3 +31,29 @@ Utils/objects-functions/delete-atribute-from-object.js
 undefined.length // TypeError: Cannot read properties of undefined
 undefined?.length // undefined 
 ```
+
+
+### Inherit Method Override And Modify
+```js
+
+class Parent {
+    getFinalLayout() {
+        return Promise.resolve("Parent Layout");
+    }
+}
+
+class Child extends Parent {
+    getFinalLayout() {
+        return super.getFinalLayout().then(originalLayout => {
+            return `${originalLayout} with Child Modifications`;
+        });
+    }
+}
+
+// Usage
+const childInstance = new Child();
+childInstance.getFinalLayout().then(layout => {
+    console.log(layout); // Output: "Parent Layout with Child Modifications"
+});
+
+```
